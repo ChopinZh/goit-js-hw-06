@@ -1,15 +1,9 @@
-const ulChildrenRef = document.querySelectorAll('li.item');
+const navRef = document.querySelectorAll('.item')
+console.log('Number of categories:', navRef.length);
 
- console.log(`В списке ${ulChildrenRef.length} категории`);
-
-const showTitleAndNumberOfElements = elements => {
-    return elements.forEach(el => {
-        const titleRef = el.querySelector('h2');
-        const ulRef = el.querySelector('ul');
-        console.log(`Категория: ${titleRef.textContent}`);
-        console.log(`Количество элементов: ${ulRef.children.length}`)
-    })
-
-}
-
-showTitleAndNumberOfElements(ulChildrenRef);
+navRef.forEach(function (itemName) {
+    const categoriesRef = itemName.firstElementChild;
+    const elementsLengthRef = itemName.lastElementChild;
+    console.log('Category :', categoriesRef.textContent)
+    console.log('Elelments :', elementsLengthRef.children.length)
+})
