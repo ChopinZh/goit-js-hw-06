@@ -1,10 +1,10 @@
 const ingredients = [
-    'Картошка',
-    'Грибы',
-    'Чеснок',
-    'Помидоры',
-    'Зелень',
-    'Приправы',
+  'Potatoes',
+  'Mushrooms',
+  'Garlic',
+  'Tomatos',
+  'Herbs',
+  'Condiments',
   ];
   const ulRef = document.querySelector('#ingredients');
   
