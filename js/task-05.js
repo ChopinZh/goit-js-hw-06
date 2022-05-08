@@ -5,7 +5,7 @@ const spanRef = document.querySelector('#name-output');
 
 const onInputChange =() => {
      if (inputRef.value.length < 1) {
-        spanRef.textContent = 'незнакомец';
+        spanRef.textContent = 'Anonymous';
     } else {
         spanRef.textContent = inputRef.value;
     };
